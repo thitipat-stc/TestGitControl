@@ -39,6 +39,8 @@
             this.tabFormContentContainer1 = new DevExpress.XtraBars.TabFormContentContainer();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.tabFormContentContainer2 = new DevExpress.XtraBars.TabFormContentContainer();
+            this.tabFormPage2 = new DevExpress.XtraBars.TabFormPage();
             ((System.ComponentModel.ISupportInitialize)(this.tabFormControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabFormDefaultManager1)).BeginInit();
             this.tabFormContentContainer1.SuspendLayout();
@@ -52,7 +54,8 @@
             this.tabFormControl1.Manager = this.tabFormDefaultManager1;
             this.tabFormControl1.Name = "tabFormControl1";
             this.tabFormControl1.Pages.Add(this.tabFormPage1);
-            this.tabFormControl1.SelectedPage = this.tabFormPage1;
+            this.tabFormControl1.Pages.Add(this.tabFormPage2);
+            this.tabFormControl1.SelectedPage = this.tabFormPage2;
             this.tabFormControl1.Size = new System.Drawing.Size(790, 50);
             this.tabFormControl1.TabForm = this;
             this.tabFormControl1.TabIndex = 0;
@@ -132,6 +135,20 @@
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             // 
+            // tabFormContentContainer2
+            // 
+            this.tabFormContentContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabFormContentContainer2.Location = new System.Drawing.Point(0, 50);
+            this.tabFormContentContainer2.Name = "tabFormContentContainer2";
+            this.tabFormContentContainer2.Size = new System.Drawing.Size(790, 545);
+            this.tabFormContentContainer2.TabIndex = 4;
+            // 
+            // tabFormPage2
+            // 
+            this.tabFormPage2.ContentContainer = this.tabFormContentContainer2;
+            this.tabFormPage2.Name = "tabFormPage2";
+            this.tabFormPage2.Text = "Page 1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -141,7 +158,7 @@
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
-            this.Controls.Add(this.tabFormContentContainer1);
+            this.Controls.Add(this.tabFormContentContainer2);
             this.Controls.Add(this.tabFormControl1);
             this.Name = "Form1";
             this.TabFormControl = this.tabFormControl1;
@@ -169,6 +186,8 @@
         private DevExpress.XtraBars.TabFormPage tabFormPage1;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraBars.TabFormContentContainer tabFormContentContainer2;
+        private DevExpress.XtraBars.TabFormPage tabFormPage2;
     }
 }
 
